@@ -7,7 +7,7 @@
 
 }
 
-header {
+body {
     width: 100%;
     max-width: 1440px;
     margin: 0 auto;
@@ -178,7 +178,8 @@ header {
     margin-bottom: 24px;
 
 }
-.service-div{
+
+.service-div {
     padding-top: 40px;
 }
 
@@ -208,12 +209,14 @@ header {
 
 }
 
-.service-list-info {
+.service-list-info,
+.fact-info {
     font-weight: 400;
     font-size: 16px;
     color: #727272;
 }
-.service-img{
+
+.service-img {
     position: relative;
 }
 
@@ -223,11 +226,134 @@ header {
     background: #FF900E;
     border-radius: 8px;
     font-weight: 700;
-font-size: 65px;
-color: #FFFFFF;
-text-align: center;
-align-items: center;
-position: absolute;
-bottom: -15px;
+    font-size: 65px;
+    color: #FFFFFF;
+    position: absolute;
+    bottom: -30px;
+    display: flex;
+    align-items: center;
+    
+}
+
+
+/* factzs */
+
+.facts {
+    margin-top: 130px;
+}
+
+.fact {}
+
+.fact-title {
+    font-weight: 700;
+    font-size: 45px;
+    color: #131313;
+    padding-bottom: 24px;
+}
+
+    {}
+
+.icon-container {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 100px;
+}
+
+.fact-icon {
+    width: 241.83px;
+    height: 241.83px;
+    border: 1px solid #FF900E;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 130px;
+
 
 }
+
+.fact-icon>img {
+    margin-top: 45px;
+}
+
+.fact-icon:hover img {
+    transform: rotate(-90deg);
+}
+
+.fact-number {
+    font-weight: 600;
+    font-size: 45px;
+    color: #424242;
+}
+
+.fact-content {
+    font-weight: 600;
+    font-size: 20px;
+    color: #727272;
+}
+
+/* Sponspos */
+
+.sponsor {
+    margin-bottom: 130px;
+}
+
+.sponsor-details {
+    text-align: center;
+}
+
+.sponsor-title,
+.contact-title {
+    font-weight: 700;
+    font-size: 45px;
+    color: #131313;
+}
+
+.sponsor-info {
+
+    font-weight: 400;
+    font-size: 16px;
+    padding-top: 24px;
+    padding-bottom: 50px;
+
+}
+
+.sponsor-icon {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.sponsor-icon>img {
+    filter: grayscale(100%);
+}
+
+/* footer */
+footer {
+    height: 100px;
+    background: #FFF4E7;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 130px;
+    margin-top: 130px;
+}
+
+.contact {
+    text-align: center;
+    align-items: center;
+}
+.contact-title{
+    margin-bottom: 25px;
+}
+
+footer > p {
+    font-weight: 400;
+    font-size: 20px;
+    color: #424242;
+    display: flex;
+    
+    
+    
+
+}
+
