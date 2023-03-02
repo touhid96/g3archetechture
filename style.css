@@ -114,6 +114,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
     gap: 75px;
     margin-bottom: 130px;
 
@@ -132,8 +133,6 @@ body {
     border-radius: 8px;
 }
 
-.feature-container {}
-
 .feature-info {
     font-weight: 400;
     font-size: 16px;
@@ -141,7 +140,6 @@ body {
     margin-bottom: 32px;
 }
 
-.btn-feature {}
 
 .feature-title {
     font-weight: 500;
@@ -165,6 +163,7 @@ body {
 .service {
     display: flex;
     justify-content: space-between;
+    
     gap: 146px;
 
 }
@@ -182,8 +181,6 @@ body {
 .service-div {
     padding-top: 40px;
 }
-
-.service-info {}
 
 .service-list {
     width: 586px;
@@ -229,7 +226,7 @@ body {
     font-size: 65px;
     color: #FFFFFF;
     position: absolute;
-    bottom: -30px;
+    bottom: 30px;
     display: flex;
     align-items: center;
     
@@ -242,8 +239,6 @@ body {
     margin-top: 130px;
 }
 
-.fact {}
-
 .fact-title {
     font-weight: 700;
     font-size: 45px;
@@ -251,7 +246,7 @@ body {
     padding-bottom: 24px;
 }
 
-    {}
+    
 
 .icon-container {
     display: flex;
@@ -351,9 +346,53 @@ footer > p {
     font-size: 20px;
     color: #424242;
     display: flex;
-    
-    
-    
-
 }
 
+/* responsive */
+
+@media only screen and (max-width:576px) {
+
+    .nav-container{
+        flex-direction: column;
+    }
+    .nav-menu>ul{
+        padding-top: 25px;
+    }
+    .banner-img > img {
+        width: 100%;
+    }
+    .featute-images {
+        grid-template-columns: repeat(1, 100%);
+        padding-left: 25px;
+    }
+
+    .feature-flex{
+        flex-direction: column;
+        padding-left: 5px;
+    }
+    .service{
+        flex-direction: column-reverse;
+    }
+    .service-img > img{
+        width: 100%;
+    }
+    .service-list{
+        width: 100%;
+    }
+    .icon-container{
+        flex-direction: column;
+        padding-top: 50px;
+        justify-content: center;
+        align-items: center;
+    }
+    .fact-icon{
+        margin-bottom: 25px;
+    }
+
+    .footer > p {
+        font-weight: 200;
+        font-size: 10px;
+    }
+
+
+}
